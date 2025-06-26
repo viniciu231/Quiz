@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiz Romântico</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+  <audio id="bg-music" loop>
+    <source src="hotel-montellfish.mp3" type="audio/mpeg" />
+  </audio>
+  <button id="music-toggle">🎵 Música</button>
+
+  <div class="quiz-container animate__animated animate__fadeIn">
+    <h1 class="animate__animated animate__fadeInDown">Quiz Romântico</h1>
+    <img id="question-image" src="" alt="Foto romântica" />
+    <div id="question" class="animate__animated animate__fadeInUp"></div>
+    <div id="answers"></div>
+    <button id="next-button">Próxima</button>
+  </div>
+
+  <div id="result-container">
+    <div id="score"></div>
+    <div id="trophy-container" style="display:none;">
+      <img src="imgs/trofeu.png" alt="Troféu de campeão" />
+      <p>Você é o campeão do nosso amor! 🏆</p>
+    </div>
+    <div id="gallery" style="display:none;">
+      <h3>Momentos especiais 💕</h3>
+      <div class="slideshow-container">
+        <img id="slideshow-image" src="imgs/foto1.jpg" alt="Momento especial" />
+      </div>
+    </div>
+    <div id="love-letter" style="display: none;">
+  <div class="love-letter" style="white-space: pre-wrap; margin-top: 30px; padding: 20px; background-color: #fff0f6; border-radius: 20px; box-shadow: 0 4px 12px rgba(233, 30, 99, 0.2); color: #880e4f;">
+    <h2 style="color: #ad1457;">Carta para você 💖</h2>
+    <p>Estou escrevendo esta carta porque sinto que as palavras merecem ser expressas de uma maneira mais profunda. Embora eu tenha tentado transmitir meus sentimentos na carta de ontem, percebo que não foi o suficiente.</p>
+
+    <p>Desde o momento em que você entrou em minha vida, tudo mudou. Você trouxe luz e felicidade aos meus dias, e cada momento que passamos juntos é algo incrível.</p>
+
+    <p>Com você, sou verdadeiramente eu mesmo, livre de qualquer máscara ou fachada. Cada momento compartilhado com você é uma lembrança preciosa que guardarei comigo.</p>
+
+    <p>Quero que saiba que estou aqui para você, não importa o que aconteça. Eu sei que "a vida não é um morango" — palavras ditas por você hoje — e enfrentamos nossos desafios e dificuldades como qualquer casal.</p>
+
+    <p>E sei que você não tem culpa disso, mas eu tô tentando melhorar. Eu tô sempre tentando... por você.</p>
+  </div>
+</div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
